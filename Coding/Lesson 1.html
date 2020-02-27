@@ -1,0 +1,118 @@
+<HTML>
+ 
+
+
+<HEAD>
+
+<STYLE type='text/css'>
+#TitleandBox{
+top: 30%;
+left: 30%;
+width: 49%;
+height: 49%;
+position: absolute;
+background:#FFFFFF;
+z-index: 2;
+font-family: Nunito;
+padding:1%;
+font-size: 30;
+color: black;
+}
+
+
+#Paragraph{
+top: 44%;
+left: 32%;
+width: 24%;
+height: 32%;
+position: absolute;
+background:#FFFFFF;
+z-index: 3;
+font-family: Nunito;
+font-size: 16;
+color: black;
+}
+
+
+#SublimeLogo{
+top: 44%;
+left: 64%;
+width: 10%;
+position: absolute;
+z-index: 4;
+font-family: Nunito;
+}
+
+
+#SublimeTextDocument{
+top: 68%;
+left: 64%;
+width: 10%;
+position: absolute;
+z-index: 4;
+font-family: Nunito;
+transition: top 0.5s ease;
+border: solid 1px black;
+
+
+}
+
+
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<div>
+<P ID='TitleandBox'>Coding Lesson 1: Download Sublime</P>
+
+<P id='Paragraph'>Click on this Sublime logo and you will get into a website where you can download Sublime Text.<br></br>It should look like this on the right with a black or white background when you open Sublime Text, click on it to see it bigger. <br><br>Go to the next slide for lesson 2.</P>
+<A href='https://www.sublimetext.com/3' target='_blank'><IMG src='Design Pictures/Sublime Logo.png' id='SublimeLogo'></IMG></A>
+
+
+
+
+<IMG onclick="count++;
+if(count>1){
+count=0;
+}
+
+if(count==0) {
+   document.getElementById('SublimeTextDocument').style.width='10%',document.getElementById('SublimeTextDocument').style.top='68%',document.getElementById('SublimeTextDocument').style.left='64%';
+}
+else {
+   document.getElementById('SublimeTextDocument').style.width='60%',document.getElementById('SublimeTextDocument').style.top='0%',document.getElementById('SublimeTextDocument').style.left='24%';
+   
+}" src='Design Pictures/Sublime Text Document.png' id='SublimeTextDocument'></IMG>
+
+<script>
+var count=0;
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</BODY>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</HTML>
